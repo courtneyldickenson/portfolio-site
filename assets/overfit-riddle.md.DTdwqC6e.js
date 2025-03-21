@@ -1,4 +1,4 @@
-import{_ as p,p as f,c as s,o as l,j as e,af as r,e as m,ag as i,t as g,C as b,ae as h,G as u,w as _}from"./chunks/framework.DbV1DCb-.js";const y={class:"riddle"},q={key:0},T={__name:"OverfitRiddle",setup(c){const a=f({q1:"",q2:"",q3:""}),o=f("");function n(){const v=a.value.q1.trim().toLowerCase(),t=a.value.q2.trim().toLowerCase(),d=a.value.q3.trim().toLowerCase();v==="yes"&&t==="yes"&&d==="no"?o.value=`🎉 You got it! 🎉
+import{_ as p,p as f,c as s,o as l,j as e,af as r,e as m,ag as i,t as g,C as b,ae as h,G as u,w as _}from"./chunks/framework.JvnCEULl.js";const y={class:"riddle"},q={key:0},T={__name:"OverfitRiddle",setup(c){const a=f({q1:"",q2:"",q3:""}),o=f("");function n(){const v=a.value.q1.trim().toLowerCase(),t=a.value.q2.trim().toLowerCase(),d=a.value.q3.trim().toLowerCase();v==="yes"&&t==="yes"&&d==="no"?o.value=`🎉 You got it! 🎉
 
 The model overfit to a single feature: the number of dots.
 It learned to say YES only if there are exactly 3 dots — completely ignoring shape and color.
