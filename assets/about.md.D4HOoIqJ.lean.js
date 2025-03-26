@@ -1,0 +1,1 @@
+import{_ as t,c as a,o,ae as r}from"./chunks/framework.JvnCEULl.js";const m=JSON.parse('{"title":"About Courtney","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),n={name:"about.md"};function l(i,e,s,h,u,d){return o(),a("div",null,e[0]||(e[0]=[r("",19)]))}const p=t(n,[["render",l]]);export{m as __pageData,p as default};
