@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as s}from"./chunks/framework.JvnCEULl.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"projects/Lego_classifier.md","filePath":"projects/Lego_classifier.md"}'),r={name:"projects/Lego_classifier.md"};function a(o,c,i,n,_,p){return s(),t("div")}const d=e(r,[["render",a]]);export{l as __pageData,d as default};
