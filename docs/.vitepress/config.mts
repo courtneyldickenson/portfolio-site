@@ -1,27 +1,37 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Portfolio_site",
-  description: "A VitePress Site",
-  base: "/portfolio-site/", // Ensure this matches your repository name
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-    sidebar: [
+  title: "Courtney Dickenson",
+  description: "Software Engineer Portfolio",
+  base: "/portfolio-site/",
+
+  head: [
+    [
+      'script',
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
+        defer: '',
+        'data-domain': 'courtneyldickenson.github.io/portfolio-site',
+        src: 'https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js'
       }
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    [
+      'script',
+      {},
+      'window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }'
     ]
+  ],
+
+  themeConfig: {
+    nav: [
+      { text: 'Projects', link: '/projects' },
+      { text: 'About', link: '/about' }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/courtneyldickenson' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/courtneyspencer12/' }
+    ]
+  },
+
+  
   }
-})
+)

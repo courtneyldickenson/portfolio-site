@@ -5,12 +5,15 @@ import { projects } from './projects.js'
 const selectedCategory = ref('All')
 const selectedTag = ref(null)
 
-const categories = ['All', ...new Set(projects.map(p => p.category))]
+// Only include projects with links
+const linkedProjects = projects.filter(p => !!p.link)
+
+const categories = ['All', ...new Set(linkedProjects.map(p => p.category))]
 
 const filteredProjects = computed(() => {
   let result = selectedCategory.value === 'All'
-    ? projects
-    : projects.filter(p => p.category === selectedCategory.value)
+    ? linkedProjects
+    : linkedProjects.filter(p => p.category === selectedCategory.value)
 
   if (selectedTag.value) {
     result = result.filter(p => p.tags?.includes(selectedTag.value))
@@ -47,7 +50,11 @@ function resetFilters() {
 
     <div class="cards">
       <div v-for="project in filteredProjects" :key="project.title" class="card">
-        <h3>{{ project.title }}</h3>
+        <h3>
+          <a :href="project.link" class="view-link">
+            {{ project.title }}
+          </a>
+        </h3>
         <p>{{ project.description }}</p>
         <div class="tags">
           <span
@@ -59,7 +66,6 @@ function resetFilters() {
             {{ tag }}
           </span>
         </div>
-        <a v-if="project.link" :href="project.link" class="view-link">View Project →</a>
       </div>
     </div>
   </div>
@@ -166,12 +172,9 @@ function resetFilters() {
 }
 
 .view-link {
-  display: inline-block;
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
+  text-decoration: none;
   color: var(--vp-c-brand);
   font-weight: bold;
-  text-decoration: none;
 }
 
 .view-link:hover {

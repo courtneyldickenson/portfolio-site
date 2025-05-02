@@ -30,7 +30,7 @@ But here's the thing... the model seems *weird*. Maybe it’s learned the wrong 
 ## 🔍 Predict the Output:
 Try to figure out what the model learned! Choose your predictions below.
 ---
-title: The Model Has Overfit
+The Model Has Overfit
 description: Can you reverse-engineer this ML model’s logic?
 ---
 
@@ -49,17 +49,16 @@ Don’t overthink it… or do? 😉
 
 ---
 
-### 🧠 Solved it?
-If your answers match the model's predictions:
+### 🧠 Need the Answer?
 
-```txt
-🎉 You got it! 🎉
+::: details Click to reveal the model’s logic
 
-The model overfit to a single feature: the number of dots.
-It learned to say YES only if there are exactly 3 dots — completely ignoring shape and color.
+The model overfit to a single feature: the number of dots.  
+It learned to say YES only if there are exactly **3 dots** — completely ignoring shape and color.
 
 This is what happens when models learn correlations instead of meaning.
-```
+:::
+
 
 <style scoped>
 table {

@@ -53,6 +53,8 @@ input {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  background-color: white;
+  color: black;
 }
 button {
   padding: 0.5rem 1.25rem;
@@ -74,5 +76,17 @@ pre {
   border-radius: 8px;
   white-space: pre-wrap;
   font-family: monospace;
+  color: black;
+}
+
+/* 🌙 VitePress Dark Mode Support */
+.dark .riddle input {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #444;
+}
+.dark .riddle pre {
+  background: #2a2a2a;
+  color: #f0f0f0;
 }
 </style>
