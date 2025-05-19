@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./chunks/framework.6g521mOR.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"projects/Linear_SVM.md","filePath":"projects/Linear_SVM.md"}'),a={name:"projects/Linear_SVM.md"};function o(n,s,c,_,i,p){return r(),t("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};
