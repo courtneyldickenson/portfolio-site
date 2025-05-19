@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+.cache/
+.vitepress/dist/
+
+# Local env
+.env
+.env.local
+
+# macOS system files
+.DS_Store
+
+# gh-pages temp stuff
+gh-pages/
+
+# IDE folders
+.vscode/
+.idea/

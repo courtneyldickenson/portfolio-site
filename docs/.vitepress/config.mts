@@ -8,10 +8,9 @@ export default defineConfig({
   head: [
     [
       'script',
-      {
-        defer: '',
-        'data-domain': 'courtneyldickenson.github.io/portfolio-site',
-        src: 'https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js'
+      { 
+        defer: '', 
+        src: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' 
       }
     ],
     [
@@ -30,8 +29,5 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/courtneyldickenson' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/courtneyspencer12/' }
     ]
-  },
-
-  
   }
-)
+})
